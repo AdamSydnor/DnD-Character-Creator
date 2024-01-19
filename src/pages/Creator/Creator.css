@@ -1,0 +1,133 @@
+.char-creator {
+    overflow: hidden;
+    color: azure;
+    font-family: 'Cinzel Decorative', 'serif';
+}
+
+.page-select-btn {
+    margin-top: 9rem;
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 15rem;
+    color: azure;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.page-select-btn:hover {
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 15rem;
+    color: azure;
+    letter-spacing: .25rem;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    text-shadow: azure 1px 0 8px;
+    cursor: pointer;
+}
+
+.save-btn {
+    margin-top: 1rem;
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+    font-size: 2rem;
+    color: azure;
+    background-color: rgba(32, 32, 32, 0.85);
+    box-shadow: 0px 0px 20px 2px rgba(32, 32, 32, 0.85);
+    outline: none;
+    border: none;
+    border: 1px solid rgb(0, 73, 141);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.save-btn:hover {
+    margin-top: 1rem;
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+    font-size: 2rem;
+    color: azure;
+    background-color: rgba(32, 32, 32, 0.85);
+    box-shadow: 0px 0px 20px 2px rgba(32, 32, 32, 0.85);
+    outline: none;
+    border: none;
+    border: 1px solid rgb(0, 73, 141);
+    cursor: pointer;
+    text-shadow: azure 1px 0 8px;
+    letter-spacing: .25rem;
+    cursor: pointer;
+}
+
+.creator-card-div {
+    position: relative;
+    height: 70vh;
+    width: 76.5vw;
+    background-color: rgba(32, 32, 32, 0.85);
+    border: 2px solid rgb(0, 73, 141);
+    padding: 10px;
+    box-shadow: inset 1px 2px 15px 2px black;
+    user-select: none;
+}
+
+.select {
+    font-size: 1.2rem;
+    padding: .5em;
+    cursor: pointer;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    transition: .5s;
+}
+
+.select:hover {
+    font-size: 1.2rem;
+    padding: .5em;
+    cursor: pointer;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    text-shadow: azure 1px 0 8px;
+}
+
+option {
+    background-color: black;
+    border-bottom: 1px solid rgb(0, 73, 141);
+    margin-top: 5px;
+}
+
+.btns-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn-div {
+    position: relative;
+}
+
+.creator-div {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 300vw;
+    margin-top: 15px;
+    transition: 1.2s;
+}
+
+.save-div {
+    display: flex;
+    justify-content: center;
+}

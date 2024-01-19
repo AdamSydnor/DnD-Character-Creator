@@ -1,0 +1,143 @@
+.background-card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-img {
+    font-size: 1.2rem;
+    padding: .5em;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    width: 23.2rem;
+}
+
+.choose-img::file-selector-button {
+    font-size: 1.2rem;
+    padding: .5em;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    cursor: pointer;
+    margin-right: 2rem;
+    transition: .5s;
+}
+
+.choose-img::file-selector-button:hover {
+    font-size: 1.2rem;
+    padding: .5em;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    cursor: pointer;
+    margin-right: 2rem;
+    letter-spacing: .1rem;
+    text-shadow: azure 1px 0 8px;
+}
+
+.info-div {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    gap: 100px;
+}
+
+.name-background {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: start;
+}
+
+.race-subrace {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: end;
+}
+
+.name-span {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.name-span input {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: x-large;
+    border: 1px solid rgb(0, 73, 141);
+    background-image: url('../images/assets/old-paper-texture-background-free-photo.jpg');
+    background-position: -500px;
+    box-shadow: inset 0px 0px 10px 1px black;
+}
+
+.background-span {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.race-span {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.subrace-span {
+    position: absolute;
+    top: 8.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.background-flex-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12vw;
+}
+
+.description-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-textarea {
+    font-family: 'Bilbo Swash Caps', 'cursive';
+    font-size: x-large;
+    width: 50rem;
+    height: 18rem;
+    border: 1px solid rgb(0, 73, 141);
+    background-image: url('../images/assets/old-paper-texture-background-free-photo.jpg');
+    background-position: -500px;
+    box-shadow: inset 0px 0px 20px 2px black;
+    resize: none;
+}
+
+.desc-textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.info-description-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.character-img {
+    width: 24rem;
+    height: 36rem;
+    object-fit: cover;
+    border: 2px solid rgb(0, 73, 141);
+    box-shadow: 1px 2px 15px 2px black;
+}

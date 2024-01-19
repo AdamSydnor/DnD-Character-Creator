@@ -1,0 +1,105 @@
+.class-card-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(0, 73, 141);
+    margin-top: 5rem;
+    padding: 2rem;
+    box-shadow: 1px 2px 15px 2px black;
+}
+
+.level-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.level-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: -5px;
+    transition: .5s;
+}
+
+.level-btn:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: -5px;
+    box-shadow: azure 1px 0 8px;
+}
+
+.level-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-card-btn {
+    font-size: 1.2rem;
+    padding: .5em;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.class-card-btn:hover {
+    font-size: 1.2rem;
+    padding: .5em;
+    letter-spacing: .1rem;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    background-color: transparent;
+    font-family: 'Cinzel decorative', serif;
+    color: azure;
+    cursor: pointer;
+    text-shadow: azure 1px 0 8px;
+}
+
+.subclass-selected {
+    text-align: center;
+}
+
+.select-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100rem;
+    margin-top: 2rem;
+}
+
+.add-class-btn {
+    margin-top: 2rem;
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: azure;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(0, 73, 141);
+    border-bottom: 1px solid rgb(0, 73, 141);
+    cursor: pointer;
+}
+
+.selected-spell {
+    background-color: black;
+}
+
+.btn-selected {
+    text-shadow: rgb(0, 73, 141) 1px 0 8px;
+}

@@ -1,0 +1,31 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-div {
+    margin-top: 80px;
+    background-color: rgba(32, 32, 32, 0.85);
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid rgb(0, 73, 141);
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.welcome {
+    font-size: 24px;
+    color: azure;
+    margin-top: 30px;
+    font-family: 'Cinzel Decorative', 'serif';
+    font-weight: 700;
+}
+
+.welcome-msg {
+    color: azure;
+    line-height: 1.4;
+    margin: 50px 150px 0px 150px;
+    font-family: 'Cinzel Decorative', 'cursive';
+    font-size: 16px;
+}

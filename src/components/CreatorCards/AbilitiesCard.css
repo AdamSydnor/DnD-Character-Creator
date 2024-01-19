@@ -1,0 +1,58 @@
+.hp-div {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ability-parent-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.ap-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+.abilities-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.ability-div {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    align-items: center;
+}
+
+.ability-div span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.5rem;
+    position: relative;
+}
+
+.plusminus-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: -5px;
+    transition: .5s;
+}
+
+.plusminus-btn:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: -5px;
+    box-shadow: azure 1px 0 8px;
+}

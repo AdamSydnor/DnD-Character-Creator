@@ -1,0 +1,132 @@
+.header {
+    box-sizing: border-box;
+    background-color: rgba(32, 32, 32, 0.85);
+    box-shadow: 5px 8px 8px rgba(32, 32, 32, 0.85);
+    padding: 25px 25px;
+    border-bottom: 3px solid rgb(0, 73, 141);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-nav {
+    display: flex;
+    width: 200px;
+}
+
+.header-nav i {
+    border: 1px solid rgb(0, 73, 141);
+}
+
+.logo-div {
+    display: inline;
+    width: 200px;
+}
+
+.account-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    overflow: hidden;
+}
+
+.nav {
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: azure;
+    font-family: 'Cinzel Decorative', 'serif';
+    transition: all 0.5s;
+}
+
+.nav:hover {
+    margin: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: azure;
+    text-shadow: azure 1px 0 8px;
+}
+
+.logo-div {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -54px;
+    width: 200px;
+}
+
+/* Button CSS */
+.login-btn {
+    position: relative;
+    background: rgb(0, 73, 141);
+    color: rgb(0, 73, 141);
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 0.0.5em;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    background: azure;
+    color: azure;
+    letter-spacing: 0.1em;
+    text-shadow: azure 1px 0 8px;
+}
+
+.login-btn:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: black;
+}
+
+.login-text {
+    position: relative;
+    z-index: 1;
+}
+
+.login-btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.login-btn i:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    height: 4px;
+    width: 4px;
+    background: black;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.8s;
+}
+
+.login-btn:hover i:before {
+    width: 20px;
+    left: 20%;
+}
+
+.login-btn i:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 4px;
+    width: 4px;
+    background: black;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.8s;
+}
+
+.login-btn:hover i:after {
+    width: 20px;
+    left: 80%;
+}
