@@ -1,5 +1,5 @@
 import { getCharacters, getCharacter, getCreatorInfo, postCharacter, editCharacter, saveCharacterChanges, deleteCharacter, upload, postCharacterImage, repostCharacterImage } from './controllers/controller.js';
-import { checkStatus, login, logout, register } from './controllers/authController.js'
+import { checkStatus, login, logout, register } from './controllers/authController.js';
 import session from 'express-session';
 import express from 'express';
 import morgan from 'morgan';

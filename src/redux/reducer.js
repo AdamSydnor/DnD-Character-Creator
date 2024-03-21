@@ -1,10 +1,8 @@
 import axios from 'axios';
 
-const { data } = await axios.get('/api/auth/status');
-
 const initialState = {
-    loggedIn: data.loggedIn,
-    user: data.user,
+    loggedIn: null,
+    user: null,
     modal: 'none'
 };
 
