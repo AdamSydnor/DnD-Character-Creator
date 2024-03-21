@@ -36,7 +36,7 @@ function Header() {
                 </div>
             </nav>
             <div className="logo-div">
-                <img src="/images/assets/dungeons-and-dragons-logo.png" alt="" className="logo"/>
+                <img src="/images/assets/character_forge.png" alt="" className="logo"/>
             </div>
             <nav className='account-div'>
                 {loggedIn ? <a href="#" className="login-btn">

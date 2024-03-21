@@ -12,7 +12,7 @@
 
 .header-nav {
     display: flex;
-    width: 200px;
+    width: 400px;
 }
 
 .header-nav i {
@@ -21,14 +21,14 @@
 
 .logo-div {
     display: inline;
-    width: 200px;
+    width: 300px;
 }
 
 .account-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 400px;
     overflow: hidden;
 }
 
@@ -54,9 +54,7 @@
 }
 
 .logo {
-    position: absolute;
-    top: -54px;
-    width: 200px;
+    width: 300px;
 }
 
 /* Button CSS */
