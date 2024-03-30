@@ -142,6 +142,20 @@ let carefulSpell = await ClassFeatureChoice.create({
     description: 'Allies automatically succeed saving throws against spells that require them.'
 });
 
+// Rogue seed data:
+
+// Wizard seed data:
+
+// Druid seed data:
+
+// Claric seed data:
+
+// Fighter seed data:
+
+// Barbarian seed data:
+
+// Warlock seed data:
+
 // Paladin seed data:
 let paladin = await Class.create({
     name: 'Paladin',
