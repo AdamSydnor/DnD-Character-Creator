@@ -144,6 +144,8 @@ let carefulSpell = await ClassFeatureChoice.create({
 
 // Rogue seed data:
 
+// Bard seed data:
+
 // Wizard seed data:
 
 // Druid seed data:
