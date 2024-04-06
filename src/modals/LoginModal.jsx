@@ -54,7 +54,7 @@ export default function LoginModal() {
     };
 
     const handleOverlayClose = (event) => {
-        console.log(event.target.classList.contains('modal'))
+        console.log(event.target.classList.contains('modal'));
         if (event.target.classList.contains('modal')) {
             dispatch({ type: 'modal-off' });
         };

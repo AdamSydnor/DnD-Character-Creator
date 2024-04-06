@@ -1,11 +1,21 @@
 import './Header.css';
 import axios from 'axios';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
 
 function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const loginStatus = async() => {
+        const { data } = await axios.get('./api/auth/status');
+        return dispatch({type: 'loginstatus', payload: data});
+    };
+
+    useEffect(() => {
+        loginStatus();
+    }, []);
+    
     let loggedIn = useSelector(state => state.loggedIn);
 
     const openModal = () => {
