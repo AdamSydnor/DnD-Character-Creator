@@ -2,8 +2,13 @@ import { DataTypes, Model } from "sequelize";
 import url from "url";
 import util from 'util';
 import connectToDB from "./db.js";
+import 'dotenv/config';
 
-const db = await connectToDB(`postgresql:///dndcreator`);
+const UserName = process.env.UserName;
+const Password = process.env.Password;
+const Host = process.env.Host;
+const DataBase = process.env.DB_URL;
+const db = await connectToDB(`postgresql://${UserName}:${Password}@${Host}:5432/${DataBase}`);
 
 // Table initializations:
 class User extends Model {
