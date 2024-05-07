@@ -155,10 +155,34 @@ let carefulSpell = await ClassFeatureChoice.create({
 // Claric seed data:
 
 // Fighter seed data:
+let fighter = await Class.create({
+    name: 'Fighter',
+    description: '',
+    subclassAt: 3,
+    spellsAt: 0,
+    hp: 8,
+    hpGain: 6
+});
 
 // Barbarian seed data:
+let barbarian = await Class.create({
+    name: 'Barbarian',
+    description: '',
+    subclassAt: 3,
+    spellsAt: 0,
+    hp: 10,
+    hpGain: 6
+});
 
 // Warlock seed data:
+let warlock = await Class.create({
+    name: 'Warlock',
+    description: '',
+    subclassAt: 1,
+    spellsAt: 1,
+    hp: 8,
+    hpGain: 5
+});
 
 // Paladin seed data:
 let paladin = await Class.create({
