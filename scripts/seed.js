@@ -151,9 +151,16 @@ let carefulSpell = await ClassFeatureChoice.create({
 // Wizard seed data:
 
 // Druid seed data:
+let druid = await Class.create({
+    name: 'druid',
+    description: '',
+    subclassAt: 3,
+    spellsAt: 1,
+    hp: 5,
+    hpGain: 2,
+});
 
 // Claric seed data:
-
 let claric = await Class.create({
     name: 'claric',
     description: '',
