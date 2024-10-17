@@ -149,6 +149,30 @@ let carefulSpell = await ClassFeatureChoice.create({
 // Bard seed data:
 
 // Wizard seed data:
+let wizard = await Class.create({
+    name: 'wizard',
+    description: '',
+    subclassAt: 3,
+    spellsAt: 1,
+    hp: 5,
+    hpGain: 2,
+});
+
+let evocation = await wizard.createSubclass({
+    name: 'Evocation',
+    description: '',
+});
+
+let sculptSpells = await ClassFeature.create({
+    name: 'Sculpt Spells',
+    description: 'Shape the way in which you cast your spells with extreme precision. Your allys no longer take damage from your spells.',
+    level: 3
+});
+
+await SubclassSubclassFeature.create({
+    subclassId: sculptSpells.subclassFeatureId,
+    subclassFeatureId: sculptSpells.subclassFeatureId
+});
 
 // Druid seed data:
 let druid = await Class.create({
@@ -294,7 +318,7 @@ let healingRadiance = await SubclassFeature.create({
 
 await SubclassSubclassFeature.create({
     subclassId: oathOfTheAncients.subclassId,
-    subclassFeature: healingRadiance.subclassFeatureId
+    subclassFeatureId: healingRadiance.subclassFeatureId
 });
 
 // Paladin subclass 'Oath of Devotion' seed data:
@@ -352,7 +376,7 @@ await SubclassSubclassFeature.create({
 let sorcerer = await Class.create({
     name: 'Sorcerer',
     description: `Sorcerers are natural spellcasters, drawing on inherent magic from a gift or bloodline.`,
-    subclassAt: 2,
+    subclassAt: 1,
     spellsAt: 1,
     hp: 6,
     hpGain: 4
@@ -490,6 +514,23 @@ await SubclassSubclassFeature.create({
 });
 
 // Spell seed data:
+let fireball = Spell.create({
+    name: 'Fire Ball',
+    description: 'Hurl a large ball of fire that explodes for area of effect damage.',
+    level: 4,
+    cantrip: false
+});
+
+await ClassSpell.create({
+    classId: wizard.ClassId,
+    spellId: fireball.spellId
+});
+
+await ClassSpell.create({
+    classId: sorcerer.classId,
+    spellId: fireball.spellId
+});
+
 let bless = await Spell.create({
     name: 'Bless',
     description: 'Bless up to 3 creatures. They gain a +1d4 bonus to attack rolls and saving throws.',
