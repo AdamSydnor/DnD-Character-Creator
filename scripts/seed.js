@@ -144,12 +144,12 @@ let carefulSpell = await ClassFeatureChoice.create({
 
 // Rogue seed data:
 let Rogue = await Class.create({
-    name: 'Bard',
+    name: 'Rogue',
     description: '',
     subclassAt: 3,
-    spellsAt: 1,
+    spellsAt: 0,
     hp: 7,
-    hpGain: 4
+    hpGain: 3
 });
 
 // Ranger seed data:
