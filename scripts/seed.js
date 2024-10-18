@@ -145,6 +145,7 @@ let carefulSpell = await ClassFeatureChoice.create({
 // Rogue seed data:
 
 // Ranger seed data:
+let ranger = await Class.create({});
 
 // Bard seed data:
 let bard = await Class.create({
