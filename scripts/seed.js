@@ -147,6 +147,14 @@ let carefulSpell = await ClassFeatureChoice.create({
 // Ranger seed data:
 
 // Bard seed data:
+let bard = await Class.create({
+    name: 'Bard',
+    description: '',
+    subclassAt: 3,
+    spellsAt: 1,
+    hp: 6,
+    hpGain: 3
+});
 
 // Wizard seed data:
 let wizard = await Class.create({
@@ -155,7 +163,7 @@ let wizard = await Class.create({
     subclassAt: 3,
     spellsAt: 1,
     hp: 5,
-    hpGain: 2,
+    hpGain: 2
 });
 
 let evocation = await wizard.createSubclass({
