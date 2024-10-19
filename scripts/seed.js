@@ -154,7 +154,7 @@ let Rogue = await Class.create({
 
 // Ranger seed data:
 let ranger = await Class.create({
-    name: 'Bard',
+    name: 'Ranger',
     description: '',
     subclassAt: 3,
     spellsAt: 1,
@@ -170,6 +170,11 @@ let bard = await Class.create({
     spellsAt: 1,
     hp: 6,
     hpGain: 3
+});
+
+let collegeOfSwords = await bard.createSubclass({
+    name: 'College Of Swords',
+    description: '',
 });
 
 // Wizard seed data:
